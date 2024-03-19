@@ -19,3 +19,13 @@ for i in range(2,n+1):
 ### 3.17
 
 今天又敲了一些數學題，感覺有些眼高手低了...甚至語法都沒有記清楚
+
+### 3.19
+
+俺枯了 dfs bfs也寫的磕磕絆絆
+```
+"".join(list); list(str) # 列表與字符串互轉
+del list[now:] # 回溯刪除
+from collections import deque; d=deque(); d.appendleft(); d.popleft(); # 雙端隊列
+sorted(a, reverse = True, key = cmp) # sort參數
+```
