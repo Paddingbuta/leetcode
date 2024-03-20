@@ -29,3 +29,18 @@ del list[now:] # 回溯刪除
 from collections import deque; d=deque(); d.appendleft(); d.popleft(); # 雙端隊列
 sorted(a, reverse = True, key = cmp) # sort參數
 ```
+
+### 3.20
+
+今天寫了一些搜索和并查集
+```
+def find(x, parent):
+    if parent[x] != x: parent[x] = find(parent[x], parent)
+    return parent[x]
+def union(x, y, parent, rank):
+    root_x = find(x, parent); root_y = find(y, parent)
+    if root_x == root_y: return
+    if rank[root_x] < rank[root_y]: parent[root_x] = root_y
+    elif rank[root_x] > rank[root_y]: parent[root_y] = root_x
+    else: parent[root_y] = root_x; rank[root_x] += 1
+```
