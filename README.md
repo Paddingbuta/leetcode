@@ -44,3 +44,7 @@ def union(x, y, parent, rank):
     elif rank[root_x] > rank[root_y]: parent[root_y] = root_x
     else: parent[root_y] = root_x; rank[root_x] += 1
 ```
+
+### 3.21
+
+聽了cs231n的機器學習 被死去的高數瘋狂衝擊
