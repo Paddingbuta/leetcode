@@ -51,4 +51,8 @@ def union(x, y, parent, rank):
 
 ### 3.22
 
-今天看了ml的一些經典算法，還碼了區間dp樹形dp的板子題
+今天看了ml的一些經典算法，還碼了區間dp樹形dp狀壓dp的板子題
+```
+fma[i][j]=max(fma[i][j-1],fma[i+1][j])+sum[j]-sum[i-1]
+dp[i][j]=max(dp[i][j],dp[v][j-1]+val[v])(v=sons of i)
+```
