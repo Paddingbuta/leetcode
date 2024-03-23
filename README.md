@@ -56,3 +56,7 @@ def union(x, y, parent, rank):
 fma[i][j]=max(fma[i][j-1],fma[i+1][j])+sum[j]-sum[i-1]
 dp[i][j]=max(dp[i][j],dp[v][j-1]+val[v])(v=sons of i)
 ```
+
+### 3.23
+
+各種dp 貪心 爆搜之類的隨便寫了一點
