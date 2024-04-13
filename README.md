@@ -72,3 +72,11 @@ dp[i][j]=max(dp[i][j],dp[v][j-1]+val[v])(v=sons of i)
 ### 4.9
 
 好耐冇做題 揾咗啲模擬貪心寫
+
+### 4.12
+
+```
+num=[int(x) for x in input().split()]
+s.append(list(map(int,input().split())))
+def __lt__(self,other)
+```
