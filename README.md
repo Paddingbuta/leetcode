@@ -80,3 +80,6 @@ num=[int(x) for x in input().split()]
 s.append(list(map(int,input().split())))
 def __lt__(self,other)
 ```
+### 5.15
+
+大模擬 暈酡酡
