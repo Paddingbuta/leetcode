@@ -86,8 +86,18 @@ def __lt__(self,other)
 
 ### 5.25
 
-差分
 ```
-diff[x1][y1]+=c,diff[x2+1][y2+1]+=c;
-diff[x2+1][y1]-=c,diff[x1][y2+1]-=c;
+diff[x1][y1] += c, diff[x2+1][y2+1] += c;
+diff[x2+1][y1] -= c, diff[x1][y2+1] -= c; //差分
+
+priority_queue<int, vector<int>, greater<int> >q; //優先隊列
+
+
+vector<pair<int, map<string, int>>> vecMap;
+map<string, int> map1 = {{"apple", 5}, {"banana", 3}};
+vecMap.push_back(make_pair(1, map1));
+for (const auto& pair : vecMap) pair.first pair.second //每個元素都是一個pair的vector 用来存储多个 map
+
+f[t][j] = f[t][j] + f[1-t][j-k]; //滾動數組
 ```
+
