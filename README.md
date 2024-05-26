@@ -101,3 +101,6 @@ for (const auto& pair : vecMap) pair.first pair.second //每個元素都是一�
 f[t][j] = f[t][j] + f[1-t][j-k]; //滾動數組
 ```
 
+### 5.26
+
+二個大int數相乘后取模會溢出 需開long long
